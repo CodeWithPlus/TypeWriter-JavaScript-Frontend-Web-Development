@@ -5,3 +5,9 @@
 This is the JavaScript class which help to animate the typewriter text. It provide ease to animate multiple text at the same time.
 
 ## Usage:
+
+### To animate one text.
+let nameTypeWriter = new TypeWriter("#name-text", "#name-blinker", "CodeWithPlus");
+nameTypeWriter.StartAnimation();
+
+
