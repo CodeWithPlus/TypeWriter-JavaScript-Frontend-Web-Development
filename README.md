@@ -8,7 +8,14 @@ This is the JavaScript class which help to animate the typewriter text. It provi
 
 ### To animate one text:
 ```
-let nameTypeWriter = new TypeWriter("#name-text", "#name-blinker", "CodeWithPlus");
+let nameTypeWriter = new TypeWriter("element", "blinker", "CodeWithPlus");
 nameTypeWriter.StartAnimation();
 ```
 
+## To animate multiple texts:
+```
+ let typeWriter = new TypeWriter("element", "blinker", ["C Programming", "C++ Programming", "Python", "Java"]);
+  anim1TypeWriter.StartAnimation();
+```
+
+## 
