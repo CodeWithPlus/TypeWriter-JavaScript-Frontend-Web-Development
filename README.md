@@ -8,30 +8,30 @@ This is the JavaScript class which help to animate the typewriter text. It provi
 
 ### To animate one text:
 ```
-let nameTypeWriter = new TypeWriter("element", "blinker", "CodeWithPlus");
-nameTypeWriter.StartAnimation();
+let typeWriter = new TypeWriter("element", "blinker", "CodeWithPlus");
+typeWriter.StartAnimation();
 ```
 
 ## To animate multiple texts:
 ```
- let typeWriter = new TypeWriter("element", "blinker", ["C Programming", "C++ Programming", "Python", "Java"]);
-  anim1TypeWriter.StartAnimation();
+let typeWriter = new TypeWriter("element", "blinker", ["C Programming", "C++ Programming", "Python", "Java"]);
+typeWriter.StartAnimation();
 ```
 
 ## To change how much times the blinker will show and hide:
 ```
-let anim2TypeWriter = new TypeWriter("#anim2", "#anim2-b", ["C Programming", "C++ Programming", "Python", "Java"], 5);
-anim2TypeWriter.StartAnimation();    
+let typeWriter = new TypeWriter("element", "blinker", ["C Programming", "C++ Programming", "Python", "Java"], 5);
+typeWriter.StartAnimation();    
 ```
 
 ## To hide the blinker from the one text after writing done:
 ```
-let name2TypeWriter = new TypeWriter("#name2-text", "#name2-blinker", "CodeWithPlus", 0);
-name2TypeWriter.StartAnimation();
+let typeWriter = new TypeWriter("element", "blinker", "CodeWithPlus", 0);
+typeWriter.StartAnimation();
 ```
 
 ## To change the duration of text to write and the duration of hiding and showing of blinker:
 ```
-let anim3TypeWriter = new TypeWriter("#anim3", "#anim3-b", ["C Programming", "C++ Programming", "Python", "Java"], 5, 500, 100);
-anim3TypeWriter.StartAnimation();  
+let typeWriter = new TypeWriter("element", "blinker", ["C Programming", "C++ Programming", "Python", "Java"], 5, 500, 100);
+typeWriter.StartAnimation();  
 ```
