@@ -6,6 +6,12 @@ This is the JavaScript class which help to animate the typewriter text. It provi
 
 ## Usage:
 
+### Caution:
+before using use the script tag to load the typewriter.js to your document.
+```
+<script src="typewriter.js"></script>
+```
+
 ### To animate one text:
 ```
 let typeWriter = new TypeWriter("element", "blinker", "CodeWithPlus");
