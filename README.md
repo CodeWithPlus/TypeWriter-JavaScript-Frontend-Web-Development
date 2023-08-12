@@ -4,6 +4,10 @@
 
 This is the JavaScript class which help to animate the typewriter text. It provide ease to animate multiple text at the same time.
 
+## Download:
+[Download the TypeWriter.js](https://github.com/Schecher1/Minecraft-Server-Creator/blob/master/README.md)
+
+
 ## Usage:
 
 ### Caution:
