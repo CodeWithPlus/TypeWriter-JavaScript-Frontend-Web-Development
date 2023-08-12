@@ -18,4 +18,8 @@ nameTypeWriter.StartAnimation();
   anim1TypeWriter.StartAnimation();
 ```
 
-## 
+## To change how much times the blinker will show and hide:
+```
+let anim2TypeWriter = new TypeWriter("#anim2", "#anim2-b", ["C Programming", "C++ Programming", "Python", "Java"], 5);
+anim2TypeWriter.StartAnimation();    
+```
