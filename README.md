@@ -23,3 +23,9 @@ nameTypeWriter.StartAnimation();
 let anim2TypeWriter = new TypeWriter("#anim2", "#anim2-b", ["C Programming", "C++ Programming", "Python", "Java"], 5);
 anim2TypeWriter.StartAnimation();    
 ```
+
+## To hide the blinker from the one text after writing done:
+```
+let name2TypeWriter = new TypeWriter("#name2-text", "#name2-blinker", "CodeWithPlus", 0);
+name2TypeWriter.StartAnimation();
+```
