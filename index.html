@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TyperWriter demo - CodeWithPlus</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our name is <span id="name-text">CodeWithPlus</span><span aria-hidden="true" id="name-blinker"></span></h1>
+    <p>Learn <span id="anim1">C Programming</span><span id="anim1-b"></span></p>
+    <p>Learn <span id="anim2">C Programming</span><span id="anim2-b"></span></p>
+    <h1>Our name is <span id="name2-text">CodeWithPlus</span><span aria-hidden="true" id="name2-blinker"></span></h1>
+    <p>Learn <span id="anim3">C Programming</span><span id="anim3-b"></span></p>
+    <script src="typewriter.js"></script>
+    <script>
+        // One text.
+        let nameTypeWriter = new TypeWriter("#name-text", "#name-blinker", "CodeWithPlus");
+        nameTypeWriter.StartAnimation();
+
+        // Multiple texts.
+        let anim1TypeWriter = new TypeWriter("#anim1", "#anim1-b", ["C Programming", "C++ Programming", "Python", "Java"]);
+        anim1TypeWriter.StartAnimation();
+
+        // Changing the blinking rate texts. The blinker will show and hide 5 times.
+        let anim2TypeWriter = new TypeWriter("#anim2", "#anim2-b", ["C Programming", "C++ Programming", "Python", "Java"], 5);
+        anim2TypeWriter.StartAnimation();    
+        
+        // Hiding the blinker from one animation.
+        let name2TypeWriter = new TypeWriter("#name2-text", "#name2-blinker", "CodeWithPlus", 0);
+        name2TypeWriter.StartAnimation();
+
+        // Changing the writing and blinking speed. The last two are of writing and blinking respectively. 500->writing speed and 100->blinking speed.
+        let anim3TypeWriter = new TypeWriter("#anim3", "#anim3-b", ["C Programming", "C++ Programming", "Python", "Java"], 5, 500, 100);
+        anim3TypeWriter.StartAnimation();    
+    </script>
+
+</body>
+</html>
