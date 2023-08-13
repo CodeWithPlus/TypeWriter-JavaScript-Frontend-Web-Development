@@ -16,6 +16,11 @@ before using use the script tag to load the typewriter.js to your document.
 <script src="typewriter.js"></script>
 ```
 
+### Declaring the text and blinker for animation:
+```
+<h1>Welcome to <span id="element">CodeWithPlus</span><span aria-hidden="true" id="blinker"></span></h1>
+```
+
 ### To animate one text:
 ```
 let typeWriter = new TypeWriter("element", "blinker", "CodeWithPlus");
